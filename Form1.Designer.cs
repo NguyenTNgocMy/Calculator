@@ -37,12 +37,13 @@ namespace calculator_KTPM
             this.label4 = new System.Windows.Forms.Label();
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtKetQua = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btCong
             // 
             this.btCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCong.Location = new System.Drawing.Point(331, 256);
+            this.btCong.Location = new System.Drawing.Point(165, 243);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(75, 48);
             this.btCong.TabIndex = 0;
@@ -115,11 +116,23 @@ namespace calculator_KTPM
             this.txtKetQua.Size = new System.Drawing.Size(389, 20);
             this.txtKetQua.TabIndex = 2;
             // 
+            // btTru
+            // 
+            this.btTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTru.Location = new System.Drawing.Point(425, 243);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(75, 48);
+            this.btTru.TabIndex = 3;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 337);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtA);
@@ -145,6 +158,7 @@ namespace calculator_KTPM
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtKetQua;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
